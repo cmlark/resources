@@ -1,45 +1,45 @@
 # =====================================================================================
-# It's recommended to use Alternate Theme Config to configure FixIt
-# Modifying this file may result in merge conflict
-# There are currently some restrictions to what a theme component can configure:
-# params, menu(s), outputformats and mediatypes
+# 建议使用备用主题配置 (Alternate Theme Config) 来配置 FixIt
+# 修改此文件可能会导致合并冲突
+# 目前对主题组件可以配置的内容有一些限制：
+# params, menu(s), outputformats 和 mediatypes
 # =====================================================================================
 
 # -------------------------------------------------------------------------------------
-# Hugo Configuration
-# See: https://gohugo.io/configuration/all/
+# Hugo 配置
+# 参见: https://gohugo.io/configuration/all/
 # -------------------------------------------------------------------------------------
 
-# website title
+# 网站标题
 title = "cmlark's 💽 Site !🙋‍♀️"
-# Hostname (and path) to the root
-baseURL = "http://localhost:1313"
-# theme list
-theme = ["FixIt"] # enable in your site config file
-# determines default content language ["en", "zh-cn", "fr", "pl", ...]
+# 根目录的主机名（和路径）
+baseURL = "https://lonelark.top"
+# 主题列表
+theme = ["FixIt"] # 在你的站点配置文件中启用
+# 确定默认内容语言 ["en", "zh-cn", "fr", "pl", ...]
 defaultContentLanguage = "zh-cn"
-# language code ["en", "zh-CN", "fr", "pl", ...]
+# 语言代码 ["en", "zh-CN", "fr", "pl", ...]
 languageCode = "zh-CN"
-# language name ["English", "简体中文", "Français", "Polski", ...]
+# 语言名称 ["English", "简体中文", "Français", "Polski", ...]
 languageName = "简体中文"
-# whether to include Chinese/Japanese/Korean
+# 是否包含中/日/韩语
 hasCJKLanguage = true
-# copyright description used only for seo schema
+# 仅用于 SEO Schema 的版权描述
 copyright = ""
-# whether to use robots.txt
+# 是否使用 robots.txt
 enableRobotsTXT = true
-# whether to use git commit log
+# 是否使用 git 提交记录
 enableGitInfo = true
-# whether to use emoji code
+# 是否使用 emoji 代码
 enableEmoji = true
-# the main sections of a site
-# if set, the MainSections method on the Site object returns the given sections,
-# otherwise it returns the section with the most pages.
+# 网站的主要部分
+# 如果设置了，Site 对象的 MainSections 方法返回给定的部分，
+# 否则返回页面最多的部分。
 # mainSections = ["posts"]
 
 # -------------------------------------------------------------------------------------
-# Imaging Configuration
-# See: https://gohugo.io/configuration/imaging/
+# 图片处理配置
+# 参见: https://gohugo.io/configuration/imaging/
 # -------------------------------------------------------------------------------------
 
 [imaging]
@@ -47,8 +47,8 @@ _merge = "shallow"
 quality = 75
 
 # -------------------------------------------------------------------------------------
-# Menu Configuration
-# See: https://fixit.lruihao.cn/documentation/basics/#menu-configuration
+# 菜单配置
+# 参见: https://fixit.lruihao.cn/documentation/basics/#menu-configuration
 # -------------------------------------------------------------------------------------
 
 [menus]
@@ -56,27 +56,27 @@ quality = 75
 [[menus.main]]
 identifier = "archives"
 parent = ""
-# you can add extra information before the name (HTML format is supported), such as icons
+# 你可以在名称前添加额外信息（支持 HTML 格式），例如图标
 pre = ""
-# you can add extra information after the name (HTML format is supported), such as icons
+# 你可以在名称后添加额外信息（支持 HTML 格式），例如图标
 post = ""
-name = "归档"
+name = "📁归档"
 url = "/archives/"
-# title will be shown when you hover on this menu link
-title = ""
+# 鼠标悬停在菜单链接上时显示的标题
+title = "所有文章列表"
 weight = 1
 
-# FixIt 0.2.14 | NEW add user-defined content to menu items
+# FixIt 0.2.14 | 新增：向菜单项添加用户自定义内容
 [menus.main.params]
-# add css class to a specific menu item
+# 为特定菜单项添加 CSS 类
 class = ""
-# whether set as a draft menu item whose function is similar to a draft post/page
+# 是否设置为草稿菜单项（功能类似于草稿文章/页面）
 draft = false
-# FixIt 0.2.16 | NEW add fontawesome icon to a specific menu item
-icon = "fa-solid fa-archive"
-# FixIt 0.2.16 | NEW set menu item type, optional values: ["mobile", "desktop"]
+# FixIt 0.2.16 | 新增：为特定菜单项添加 FontAwesome 图标
+icon = ""
+# FixIt 0.2.16 | 新增：设置菜单项类型，可选值：["mobile", "desktop"]
 type = ""
-# FixIt 0.3.9 | NEW whether to show the submenu item divider line
+# FixIt 0.3.9 | 新增：是否显示子菜单项分割线
 divided = false
 
 [[menus.main]]
@@ -84,44 +84,44 @@ identifier = "categories"
 parent = ""
 pre = ""
 post = ""
-name = "分类"
+name = "📚️分类"
 url = "/categories/"
-title = ""
+title = "所有文章分类"
 weight = 2
 
 [menus.main.params]
-icon = "fa-solid fa-folder-tree"
+icon = ""
 
 [[menus.main]]
 identifier = "tags"
 parent = ""
 pre = ""
 post = ""
-name = "标签"
+name = "🏷️标签"
 url = "/tags/"
-title = ""
+title = "所有文章标签"
 weight = 3
 
 [menus.main.params]
-icon = "fa-solid fa-tags"
+icon = ""
 
 [[menus.main]]
 identifier = "about"
 parent = ""
 pre = ""
 post = ""
-name = "关于"
+name = "🧾关于"
 url = "/about/"
-title = ""
+title = "关于本站"
 weight = 4
 
 [menus.main.params]
-icon = "fa-solid fa-archive"
+icon = ""
 
 
 # -------------------------------------------------------------------------------------
-# Related content Configuration
-# See: https://gohugo.io/content-management/related-content/
+# 相关内容配置
+# 参见: https://gohugo.io/content-management/related-content/
 # -------------------------------------------------------------------------------------
 
 [related]
@@ -163,8 +163,8 @@ type = 'fragments'
 weight = 80
 
 # -------------------------------------------------------------------------------------
-# Modules Configuration
-# See: https://gohugo.io/configuration/module/
+# 模块配置
+# 参见: https://gohugo.io/configuration/module/
 # -------------------------------------------------------------------------------------
 
 [module]
@@ -174,27 +174,27 @@ extended = true
 min = "0.147.7"
 
 # -------------------------------------------------------------------------------------
-# Markup Configuration
-# See: https://gohugo.io/configuration/markup/
+# 标记 (Markup) 配置
+# 参见: https://gohugo.io/configuration/markup/
 # -------------------------------------------------------------------------------------
 
 [markup]
 _merge = "shallow"
 
-# Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+# 语法高亮 (https://gohugo.io/content-management/syntax-highlighting)
 [markup.highlight]
-# ~~~~~~~~~~ necessary configurations ~~~~~~~~~~
+# ~~~~~~~~~~ 必要配置 ~~~~~~~~~~
 # https://github.com/hugo-fixit/FixIt/issues/43
 codeFences = true
 noClasses = false
-# ~~~~~~~~~~ necessary configurations ~~~~~~~~~~
+# ~~~~~~~~~~ 必要配置 ~~~~~~~~~~
 anchorLineNos = false
 guessSyntax = true
 lineNos = true
 lineNumbersInTable = true
 
-# Goldmark is from Hugo 0.60 the default library used for Markdown
-# See: https://gohugo.io/configuration/markup/#goldmark
+# Goldmark 是 Hugo 0.60 起默认使用的 Markdown 库
+# 参见: https://gohugo.io/configuration/markup/#goldmark
 [markup.goldmark]
 duplicateResourceFiles = false
 
@@ -208,7 +208,7 @@ table = true
 taskList = true
 typographer = true
 
-# See: https://gohugo.io/configuration/markup/#extras
+# 参见: https://gohugo.io/configuration/markup/#extras
 [markup.goldmark.extensions.extras]
 
 [markup.goldmark.extensions.extras.delete]
@@ -260,13 +260,13 @@ title = true
 
 [markup.goldmark.renderer]
 hardWraps = false
-# whether to use HTML tags directly in the document
+# 是否直接在文档中使用 HTML 标签
 unsafe = true
 xhtml = false
 
 # -------------------------------------------------------------------------------------
-# Sitemap Configuration
-# See: https://gohugo.io/templates/sitemap/#configuration
+# Sitemap (站点地图) 配置
+# 参见: https://gohugo.io/templates/sitemap/#configuration
 # -------------------------------------------------------------------------------------
 
 [sitemap]
@@ -276,8 +276,8 @@ filename = "sitemap.xml"
 priority = 0.5
 
 # -------------------------------------------------------------------------------------
-# Permalinks Configuration
-# See: https://gohugo.io/content-management/urls/#permalinks
+# 永久链接 (Permalinks) 配置
+# 参见: https://gohugo.io/content-management/urls/#permalinks
 # -------------------------------------------------------------------------------------
 
 [permalinks]
@@ -293,8 +293,8 @@ priority = 0.5
 [permalinks.term]
 
 # -------------------------------------------------------------------------------------
-# Privacy Configuration
-# See: https://gohugo.io/configuration/privacy/
+# 隐私 (Privacy) 配置
+# 参见: https://gohugo.io/configuration/privacy/
 # -------------------------------------------------------------------------------------
 
 [privacy]
@@ -306,8 +306,8 @@ enableDNT = true
 privacyEnhanced = true
 
 # -------------------------------------------------------------------------------------
-# Media Types Configuration
-# See: https://gohugo.io/configuration/media-types/
+# 媒体类型 (Media Types) 配置
+# 参见: https://gohugo.io/configuration/media-types/
 # -------------------------------------------------------------------------------------
 
 [mediaTypes]
@@ -315,13 +315,13 @@ privacyEnhanced = true
 # suffixes = ["json"]
 
 # -------------------------------------------------------------------------------------
-# Output Format Configuration
-# See: https://gohugo.io/configuration/output-formats/
+# 输出格式 (Output Format) 配置
+# 参见: https://gohugo.io/configuration/output-formats/
 # -------------------------------------------------------------------------------------
 
 [outputFormats]
 
-# FixIt 0.3.0 | NEW Options to make output /archives/index.html file
+# FixIt 0.3.0 | 新增：生成 /archives/index.html 文件的选项
 [outputFormats.archives]
 path = "archives"
 baseName = "index"
@@ -331,7 +331,7 @@ isHTML = true
 permalinkable = true
 notAlternative = true
 
-# FixIt 0.3.0 | NEW Options to make output /offline/index.html file
+# FixIt 0.3.0 | 新增：生成 /offline/index.html 文件的选项
 [outputFormats.offline]
 path = "offline"
 baseName = "index"
@@ -341,7 +341,7 @@ isHTML = true
 permalinkable = true
 notAlternative = true
 
-# FixIt 0.3.0 | NEW Options to make output readme.md file
+# FixIt 0.3.0 | 新增：生成 readme.md 文件的选项
 [outputFormats.readme]
 baseName = "readme"
 mediaType = "text/markdown"
@@ -349,7 +349,7 @@ isPlainText = true
 isHTML = false
 notAlternative = true
 
-# FixIt 0.3.0 | CHANGED Options to make output baidu_urls.txt file
+# FixIt 0.3.0 | 更改：生成 baidu_urls.txt 文件的选项
 [outputFormats.baidu_urls]
 baseName = "baidu_urls"
 mediaType = "text/plain"
@@ -357,7 +357,7 @@ isPlainText = true
 isHTML = false
 notAlternative = true
 
-# FixIt 0.3.10 | NEW Options to make output search.json file
+# FixIt 0.3.10 | 新增：生成 search.json 文件的选项
 [outputFormats.search]
 baseName = "search"
 mediaType = "application/json"
@@ -367,11 +367,11 @@ isHTML = false
 permalinkable = true
 
 # -------------------------------------------------------------------------------------
-# Output Configuration
-# See: https://gohugo.io/configuration/outputs/
+# 输出 (Output) 配置
+# 参见: https://gohugo.io/configuration/outputs/
 # -------------------------------------------------------------------------------------
 
-# Options to make hugo output files, the optional values are below:
+# 生成 Hugo 输出文件的选项，可选值如下：
 # home = ["html", "rss", "archives", "offline", "readme", "baidu_urls", "search"]
 # page = ["html", "markdown"]
 # section = ["html", "rss"]
@@ -401,8 +401,8 @@ term = [
 ]
 
 # -------------------------------------------------------------------------------------
-# Taxonomies Configuration
-# See: https://gohugo.io/configuration/taxonomies/
+# 分类法 (Taxonomies) 配置
+# 参见: https://gohugo.io/configuration/taxonomies/
 # -------------------------------------------------------------------------------------
 
 [taxonomies]
@@ -412,103 +412,103 @@ tag = "tags"
 collection = "collections"
 
 # -------------------------------------------------------------------------------------
-# Theme Core Configuration
-# See: https://fixit.lruihao.cn/documentation/basics/#theme-configuration
+# 主题核心配置
+# 参见: https://fixit.lruihao.cn/documentation/basics/#theme-configuration
 # -------------------------------------------------------------------------------------
 
 [params]
-# FixIt 0.2.15 | CHANGED FixIt theme version
-version = "0.3.X" # e.g. "0.2.X", "0.2.15", "v0.2.15" etc.
-# site description
+# FixIt 0.2.15 | 更改：FixIt 主题版本
+version = "0.3.X" # 例如 "0.2.X", "0.2.15", "v0.2.15" 等
+# 网站描述
 description = ""
-# site keywords
+# 网站关键词
 keywords = []
-# site default theme ["light", "dark", "auto"]
+# 网站默认主题 ["light", "dark", "auto"]
 defaultTheme = "auto"
-# which hash function used for SRI, when empty, no SRI is used
+# SRI 使用哪种哈希函数，为空则不使用 SRI
 # ["sha256", "sha384", "sha512", "md5"]
 fingerprint = ""
-# NEW date format
+# 新增：日期格式
 dateFormat = "2006-01-02"
-# website images for Open Graph and Twitter Cards
+# Open Graph 和 Twitter Cards 的网站图片
 images = []
-# FixIt 0.2.12 | NEW enable PWA
+# FixIt 0.2.12 | 新增：启用 PWA
 enablePWA = false
-# FixIt 0.2.14 | NEW whether to add external Icon for external links automatically
+# FixIt 0.2.14 | 新增：是否自动为外部链接添加外部图标
 externalIcon = false
-# FixIt 0.3.13 | NEW whether to capitalize titles
+# FixIt 0.3.13 | 新增：是否首字母大写标题
 capitalizeTitles = true
-# FixIt 0.3.0 | NEW whether to add site title to the title of every page
-# remember to set up your site title in `hugo.toml` (e.g. title = "title")
+# FixIt 0.3.0 | 新增：是否在每个页面的标题中添加网站标题
+# 记得在 `hugo.toml` 中设置网站标题 (例如 title = "title")
 withSiteTitle = true
-# FixIt 0.3.0 | NEW title delimiter when the site title is be added to the title of every page
+# FixIt 0.3.0 | 新增：当网站标题添加到每个页面标题时使用的分隔符
 titleDelimiter = "-"
-# FixIt 0.3.0 | NEW whether to add site subtitle to the title of index page
-# remember to set up your site subtitle by `params.header.subtitle.name`
+# FixIt 0.3.0 | 新增：是否在首页标题中添加网站副标题
+# 记得通过 `params.header.subtitle.name` 设置网站副标题
 indexWithSubtitle = false
-# FixIt 0.3.13 | NEW whether to show summary in plain text
+# FixIt 0.3.13 | 新增：是否以纯文本显示摘要
 summaryPlainify = false
-# FixIt 0.4.0 | NEW whether to enable merging missing translations from other languages
-# when set to true, missing translations from other languages will be merged and displayed
-# default is false for better performance, especially for single-language sites
-# set to true if your site has multiple languages and you want to show all content
+# FixIt 0.4.0 | 新增：是否启用合并其他语言的缺失翻译
+# 当设置为 true 时，将合并并显示其他语言的缺失翻译
+# 默认为 false 以获得更好的性能，尤其是对于单语言站点
+# 如果你的站点有多种语言并且你希望显示所有内容，请设置为 true
 enableTranslationMerge = false
-# FixIt 0.2.14 | NEW FixIt will, by default, inject a theme meta tag in the HTML head on the home page only.
-# You can turn it off, but we would really appreciate if you don’t, as this is a good way to watch FixIt's popularity on the rise.
+# FixIt 0.2.14 | 新增：FixIt 默认只会在首页 HTML head 中注入一个主题 meta 标签。
+# 你可以将其关闭，但我们非常感激你不这样做，因为这是观察 FixIt 流行度上升的好方法。
 disableThemeInject = false
 
-# Author Configuration
+# 作者配置
 [params.author]
-name = ""
-email = ""
+name = "cmlark"
+email = "cmlark@qq.com"
 link = ""
-avatar = ""
+avatar = "https://r2.cmlark.love/%E5%A4%B4%E5%83%8F%E5%8E%8B%E7%BC%A9.jpg"
 
-# FixIt 0.3.0 | NEW public Git repository information only then enableGitInfo is true
+# FixIt 0.3.0 | 新增：公共 Git 仓库信息（仅当 enableGitInfo 为 true 时）
 [params.gitInfo]
-# e.g. "https://github.com/hugo-fixit/docs"
+# 例如 "https://github.com/hugo-fixit/docs"
 repo = ""
 branch = "main"
-# the content directory path relative to the root of the repository
+# 相对于仓库根目录的内容目录路径
 dir = "content"
-# the issue template for reporting issue of the posts
-# available template params: {title} {URL} {sourceURL}
+# 报告文章问题的 issue 模板
+# 可用模板参数: {title} {URL} {sourceURL}
 issueTpl = "title=[BUG]%20{title}&body=|Field|Value|%0A|-|-|%0A|Title|{title}|%0A|URL|{URL}|%0A|Filename|{sourceURL}|"
 
-# App icon config
+# App 图标配置
 [params.app]
-# optional site title override for the app when added to an iOS home screen or Android launcher
+# 添加到 iOS 主屏幕或 Android 启动器时的可选网站标题覆盖
 title = "FixIt"
-# whether to omit favicon resource links
+# 是否省略 favicon 资源链接
 noFavicon = false
-# modern SVG favicon to use in place of older style .png and .ico files
+# 用于替代旧样式 .png 和 .ico 文件的现代 SVG favicon
 svgFavicon = ""
-# Safari mask icon color
+# Safari 遮罩图标颜色
 iconColor = "#5bbad5"
-# Windows v8-10 tile color
+# Windows v8-10 磁贴颜色
 tileColor = "#da532c"
 
-# FixIt 0.2.12 | CHANGED Android browser theme color
+# FixIt 0.2.12 | 更改：Android 浏览器主题颜色
 [params.app.themeColor]
 light = "#f8f8f8"
 dark = "#252627"
 
-# Search config
+# 搜索配置
 [params.search]
 enable = false
-# type of search engine ["algolia", "fuse", "cse", "post-chat"]
+# 搜索引擎类型 ["algolia", "fuse", "cse", "post-chat"]
 type = "fuse"
-# max index length of the chunked content
+# 分块内容的最大索引长度
 contentLength = 4000
-# placeholder of the search bar
+# 搜索栏占位符
 placeholder = ""
-# max number of results length
+# 最大结果数量
 maxResultLength = 10
-# snippet length of the result
+# 结果摘要长度
 snippetLength = 30
-# HTML tag name of the highlight part in results
+# 结果中高亮部分的 HTML 标签名
 highlightTag = "em"
-# whether to use the absolute URL based on the baseURL in search index
+# 是否在搜索索引中使用基于 baseURL 的绝对 URL
 absoluteURL = false
 
 [params.search.algolia]
@@ -516,7 +516,7 @@ index = ""
 appID = ""
 searchKey = ""
 
-# FixIt 0.2.17 | NEW https://fusejs.io/api/options.html
+# FixIt 0.2.17 | 新增：https://fusejs.io/api/options.html
 [params.search.fuse]
 isCaseSensitive = false
 minMatchCharLength = 2
@@ -528,87 +528,87 @@ ignoreLocation = false
 useExtendedSearch = false
 ignoreFieldNorm = false
 
-# FixIt 0.3.16 | NEW Custom Search Engine (CSE)
+# FixIt 0.3.16 | 新增：自定义搜索引擎 (CSE)
 [params.cse]
-# Search Engine: ["google", "bing"]
+# 搜索引擎: ["google", "bing"]
 engine = ""
-# Search results page URL (layout: search)
+# 搜索结果页面 URL (布局: search)
 resultsPage = "/search/"
 
 # Google: https://programmablesearchengine.google.com/
-# Google Custom Search Engine Context
+# Google 自定义搜索引擎上下文
 [params.cse.google]
 cx = ""
 
-# Bing (Unsupported): https://www.customsearch.ai/
+# Bing (不支持): https://www.customsearch.ai/
 [params.cse.bing]
 
-# Header config
+# Header (页眉) 配置
 [params.header]
-# FixIt 0.2.13 | CHANGED desktop header mode ["sticky", "normal", "auto"]
+# FixIt 0.2.13 | 更改：桌面端页眉模式 ["sticky", "normal", "auto"]
 desktopMode = "sticky"
-# FixIt 0.2.13 | CHANGED mobile header mode ["sticky", "normal", "auto"]
+# FixIt 0.2.13 | 更改：移动端页眉模式 ["sticky", "normal", "auto"]
 mobileMode = "auto"
 
-# Header title config
+# 页眉标题配置
 [params.header.title]
-# URL of the LOGO
+# LOGO 的 URL
 logo = ""
-# title name
+# 标题名称
 name = ""
-# you can add extra information before the name (HTML format is supported), such as icons
+# 你可以在名称前添加额外信息（支持 HTML 格式），例如图标
 pre = ""
-# you can add extra information after the name (HTML format is supported), such as icons
+# 你可以在名称后添加额外信息（支持 HTML 格式），例如图标
 post = ""
-# whether to use typeit animation for title name
+# 是否对标题名称使用打字机动画
 typeit = false
 
-# FixIt 0.2.12 | NEW Header subtitle config
+# FixIt 0.2.12 | 新增：页眉副标题配置
 [params.header.subtitle]
-# subtitle name
+# 副标题名称
 name = ""
-# whether to use typeit animation for subtitle name
+# 是否对副标题名称使用打字机动画
 typeit = false
 
-# FixIt 0.2.18 | NEW Breadcrumb config
+# FixIt 0.2.18 | 新增：面包屑导航配置
 [params.breadcrumb]
 enable = false
 sticky = false
 showHome = false
-# FixIt 0.3.13 | NEW
+# FixIt 0.3.13 | 新增
 separator = "/"
 capitalize = true
 
-# FixIt 0.3.10 | NEW Post navigation config
+# FixIt 0.3.10 | 新增：文章导航配置
 [params.navigation]
-# whether to show the post navigation in section pages scope
+# 是否在 section 页面范围内显示文章导航
 inSection = false
-# whether to reverse the next/previous post navigation order
+# 是否反转下一篇/上一篇文章导航顺序
 reverse = false
 
-# Footer config
+# Footer (页脚) 配置
 [params.footer]
 enable = true
-# whether to show copyright info
+# 是否显示版权信息
 copyright = true
-# whether to show the author
+# 是否显示作者
 author = true
-# Site creation year
+# 网站创建年份
 since = ""
-# FixIt 0.2.12 | NEW Public network security only in China (HTML format is supported)
+# FixIt 0.2.12 | 新增：公安联网备案（仅限中国，支持 HTML 格式）
 gov = ""
-# ICP info only in China (HTML format is supported)
+# ICP 备案信息（仅限中国，支持 HTML 格式）
 icp = ""
-# license info (HTML format is supported)
+# 许可协议信息（支持 HTML 格式）
 license = ""
 
-# FixIt 0.3.0 | NEW whether to show Hugo and theme info
+# FixIt 0.3.0 | 新增：是否显示 Hugo 和主题信息
 [params.footer.powered]
 enable = true
 hugoLogo = true
 themeLogo = true
 
-# FixIt 0.2.17 | CHANGED Site creation time
+# FixIt 0.2.17 | 更改：网站创建时间
 [params.footer.siteTime]
 enable = false
 animate = true
@@ -616,8 +616,8 @@ icon = "fa-solid fa-heartbeat"
 pre = ""
 value = ""
 
-# e.g. "2021-12-18T16:15:22+08:00"
-# FixIt 0.2.17 | NEW footer lines order, optional values: ["first", 0, 1, 2, 3, 4, 5, "last"]
+# 例如 "2021-12-18T16:15:22+08:00"
+# FixIt 0.2.17 | 新增：页脚行顺序，可选值：["first", 0, 1, 2, 3, 4, 5, "last"]
 [params.footer.order]
 powered = 0
 copyright = 0
@@ -625,42 +625,42 @@ statistics = 0
 visitor = 0
 beian = 0
 
-# FixIt 0.3.0 | NEW Archives page config (all pages of posts type)
+# FixIt 0.3.0 | 新增：归档页面配置（所有 posts 类型的页面）
 [params.archives]
-# special amount of posts in archives page
+# 归档页面中的特定文章数量
 paginate = 20
-# date format (month and day)
+# 日期格式（月和日）
 dateFormat = "01-02"
 
-# Section page config (all pages in section)
+# Section 页面配置（section 中的所有页面）
 [params.section]
-# special amount of pages in each section page
+# 每个 section 页面中的特定页面数量
 paginate = 20
-# date format (month and day)
+# 日期格式（月和日）
 dateFormat = "01-02"
 
-# FixIt 0.3.10 | NEW Section feed config for RSS, Atom and JSON feed.
+# FixIt 0.3.10 | 新增：RSS, Atom 和 JSON feed 的 Section feed 配置
 [params.section.feed]
-# The number of posts to include in the feed. If set to -1, all posts.
+# 包含在 feed 中的文章数量。如果设置为 -1，则为所有文章。
 limit = -1
-# whether to show the full text content in feed.
+# 是否在 feed 中显示全文内容。
 fullText = false
 
-# Term list (category or tag) page config
+# 术语列表 (category 或 tag) 页面配置
 [params.list]
-# special amount of posts in each list page
+# 每个列表页面中的特定文章数量
 paginate = 20
-# date format (month and day)
+# 日期格式（月和日）
 dateFormat = "01-02"
 
-# FixIt 0.3.10 | NEW Term list feed config for RSS, Atom and JSON feed.
+# FixIt 0.3.10 | 新增：RSS, Atom 和 JSON feed 的术语列表 feed 配置
 [params.list.feed]
-# The number of posts to include in the feed. If set to -1, all posts.
+# 包含在 feed 中的文章数量。如果设置为 -1，则为所有文章。
 limit = -1
-# whether to show the full text content in feed.
+# 是否在 feed 中显示全文内容。
 fullText = false
 
-# FixIt 0.3.13 | NEW recently updated pages config for archives, section and term list
+# FixIt 0.3.13 | 新增：归档、section 和术语列表的最近更新页面配置
 [params.recentlyUpdated]
 archives = true
 section = true
@@ -668,46 +668,46 @@ list = true
 days = 30
 maxCount = 10
 
-# FixIt 0.2.17 | NEW TagCloud config for tags page
+# FixIt 0.2.17 | 新增：标签页面的标签云配置
 [params.tagcloud]
 enable = false
-min = 14 # Minimum font size in px
-max = 32 # Maximum font size in px
-peakCount = 10 # Maximum count of posts per tag
-orderby = "name" # Order of tags, optional values: ["name", "count"]
+min = 14 # 最小字体大小 (px)
+max = 32 # 最大字体大小 (px)
+peakCount = 10 # 每个标签的最大文章数
+orderby = "name" # 标签排序方式，可选值：["name", "count"]
 
-# Home page config
+# 首页配置
 [params.home]
 
-# Home page profile
+# 首页个人资料
 [params.home.profile]
 enable = false
-# FixIt 0.4.0 | NEW Whether to show profile and content only in the first home page
+# FixIt 0.4.0 | 新增：是否仅在首页第一页显示个人资料和内容
 onlyFirstPage = false
-# Gravatar Email for preferred avatar in home page
+# 首页首选头像的 Gravatar 邮箱
 gravatarEmail = ""
-# URL of avatar shown in home page, default is author's avatar
+# 首页显示的头像 URL，默认为作者头像
 avatarURL = ""
-# FixIt 0.2.17 | NEW identifier of avatar menu link
+# FixIt 0.2.17 | 新增：头像菜单链接的标识符
 avatarMenu = ""
-# title shown in home page (HTML format is supported)
+# 首页显示的标题（支持 HTML 格式）
 title = ""
-# subtitle shown in home page (HTML format is supported)
+# 首页显示的副标题（支持 HTML 格式）
 subtitle = ""
-# whether to use typeit animation for subtitle
+# 是否对副标题使用打字机动画
 typeit = true
-# whether to show social links
+# 是否显示社交链接
 social = true
-# disclaimer (HTML format is supported)
+# 免责声明（支持 HTML 格式）
 disclaimer = ""
 
-# Home page posts
+# 首页文章
 [params.home.posts]
 enable = true
-# special amount of posts in each home posts page
+# 每个首页文章页面的特定文章数量
 paginate = 6
 
-# FixIt 0.2.16 | CHANGED Social config about the author
+# FixIt 0.2.16 | 更改：关于作者的社交配置
 [params.social]
 GitHub = ""
 Linkedin = ""
@@ -798,7 +798,7 @@ Bluesky = ""
 Phone = ""
 Email = ""
 RSS = true
-# custom social links like the following
+# 如下所示的自定义社交链接
 # [params.social.twitter]
 #   id = "lruihao"
 #   weight = 3
@@ -807,111 +807,111 @@ RSS = true
 #   [social.twitter.icon]
 #     class = "fa-brands fa-x-twitter fa-fw"
 
-# TypeIt config
+# TypeIt (打字机) 配置
 [params.typeit]
-# typing speed between each step (measured in milliseconds)
+# 每一步的打字速度（单位：毫秒）
 speed = 100
-# blinking speed of the cursor (measured in milliseconds)
+# 光标闪烁速度（单位：毫秒）
 cursorSpeed = 1000
-# character used for the cursor (HTML format is supported)
+# 光标使用的字符（支持 HTML 格式）
 cursorChar = "|"
-# cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
+# 打字结束后光标停留时间（单位：毫秒，"-1" 代表无限）
 duration = -1
-# FixIt 0.2.18 | NEW whether your strings will continuously loop after completing
+# FixIt 0.2.18 | 新增：字符串是否循环播放
 loop = false
 
-# FixIt 0.2.15 | NEW Mermaid config
-# See http://fixit.lruihao.cn/documentation/content-management/diagrams-support/mermaid/
+# FixIt 0.2.15 | 新增：Mermaid 配置
+# 参见 http://fixit.lruihao.cn/documentation/content-management/diagrams-support/mermaid/
 [params.mermaid]
-# FixIt 0.4.0 | NEW Mermaid ESM module CDN source
-# default is https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs
+# FixIt 0.4.0 | 新增：Mermaid ESM 模块 CDN 源
+# 默认为 https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs
 cdn = ""
-# FixIt 0.4.0 | NEW ZenUML ESM module CDN source
-# default is empty, you can set it to a CDN source to enable ZenUML support
-# e.g. https://cdn.jsdelivr.net/npm/@mermaid-js/mermaid-zenuml/dist/mermaid-zenuml.esm.min.mjs
+# FixIt 0.4.0 | 新增：ZenUML ESM 模块 CDN 源
+# 默认为空，你可以设置为 CDN 源以启用 ZenUML 支持
+# 例如 https://cdn.jsdelivr.net/npm/@mermaid-js/mermaid-zenuml/dist/mermaid-zenuml.esm.min.mjs
 zenuml = ""
-# For values, see https://mermaid.js.org/config/theming.html#available-themes
+# 可选值参见 https://mermaid.js.org/config/theming.html#available-themes
 themes = [
   "default",
   "dark"
 ]
-# FixIt 0.4.0 | NEW The security level for Mermaid diagrams
-# optional values: ["strict", "loose", "antiscript", "sandbox"]
+# FixIt 0.4.0 | 新增：Mermaid 图表的安全级别
+# 可选值：["strict", "loose", "antiscript", "sandbox"]
 securityLevel = "loose"
-# FixIt 0.4.0 | NEW The appearance style for Mermaid diagrams
-# optional values: ["classic", "handDrawn"]
+# FixIt 0.4.0 | 新增：Mermaid 图表的外观风格
+# 可选值：["classic", "handDrawn"]
 look = "handDrawn"
-# FixIt 0.4.0 | NEW Specifies the font to be used in the rendered diagrams
+# FixIt 0.4.0 | 新增：指定渲染图表时使用的字体
 fontFamily = ""
-# FixIt 0.4.0 | NEW Layout loaders from ESM module CDN sources (e.g., ELK layout engine)
-# Example: ["https://cdn.jsdelivr.net/npm/@mermaid-js/layout-elk/dist/mermaid-layout-elk.esm.min.mjs"]
-# This will enable additional layout options: ["elk", "elk.layered", "elk.stress", "elk.force", "elk.mrtree"]
+# FixIt 0.4.0 | 新增：来自 ESM 模块 CDN 源的布局加载器（例如 ELK 布局引擎）
+# 例如：["https://cdn.jsdelivr.net/npm/@mermaid-js/layout-elk/dist/mermaid-layout-elk.esm.min.mjs"]
+# 这将启用额外的布局选项：["elk", "elk.layered", "elk.stress", "elk.force", "elk.mrtree"]
 layoutLoaders = []
-# Default layout algorithm for rendering diagrams
-# Available options: "dagre" (default), "elk", "elk.layered", "elk.stress", "elk.force", "elk.mrtree"
-# Note: ELK layouts require layoutLoaders to be configured first
+# 渲染图表的默认布局算法
+# 可用选项："dagre" (默认), "elk", "elk.layered", "elk.stress", "elk.force", "elk.mrtree"
+# 注意：ELK 布局需要先配置 layoutLoaders
 layout = "dagre"
 
-# FixIt 0.3.13 | NEW Admonitions custom config
-# See https://fixit.lruihao.cn/documentation/content-management/shortcodes/extended/admonition/#custom-admonitions
-# syntax: <type> = <icon>
+# FixIt 0.3.13 | 新增：Admonitions (警告/提示) 自定义配置
+# 参见 https://fixit.lruihao.cn/documentation/content-management/shortcodes/extended/admonition/#custom-admonitions
+# 语法：<type> = <icon>
 [params.admonition]
 # ban = "fa-solid fa-ban"
 
-# FixIt 0.3.14 | NEW Task lists custom config
-# See https://fixit.lruihao.cn/documentation/content-management/advanced/#custom-task-lists
-# syntax: <sign> = <icon>
+# FixIt 0.3.14 | 新增：任务列表自定义配置
+# 参见 https://fixit.lruihao.cn/documentation/content-management/advanced/#custom-task-lists
+# 语法：<sign> = <icon>
 [params.taskList]
 # tip = "fa-regular fa-lightbulb"
 
-# FixIt 0.3.15 | NEW version shortcode config
+# FixIt 0.3.15 | 新增：version shortcode 配置
 [params.repoVersion]
-# url prefix for the release tag
+# 发布标签的 url 前缀
 url = "https://github.com/hugo-fixit/FixIt/releases/tag/v"
-# project name
+# 项目名称
 name = "FixIt"
 
-# FixIt 0.2.12 | NEW PanguJS config
+# FixIt 0.2.12 | 新增：PanguJS 配置
 [params.pangu]
-# For Chinese writing
+# 用于中文写作
 enable = false
-selector = "article" # FixIt 0.2.17 | NEW
+selector = "article" # FixIt 0.2.17 | 新增
 
-# FixIt 0.2.12 | NEW Watermark config
-# Detail config see https://github.com/Lruihao/watermark#readme
+# FixIt 0.2.12 | 新增：水印配置
+# 详细配置参见 https://github.com/Lruihao/watermark#readme
 [params.watermark]
 enable = false
-# watermark's text (HTML format is supported)
+# 水印文本（支持 HTML 格式）
 content = ""
-# watermark's transparency
+# 水印透明度
 opacity = 0.1
-# watermark's width. unit: px
+# 水印宽度。单位：px
 width = 150
-# watermark's height. unit: px
+# 水印高度。单位：px
 height = 20
-# row spacing of watermarks. unit: px
+# 水印行间距。单位：px
 rowSpacing = 60
-# col spacing of watermarks. unit: px
+# 水印列间距。单位：px
 colSpacing = 30
-# watermark's tangent angle. unit: deg
+# 水印旋转角度。单位：deg
 rotate = 15
-# watermark's fontSize. unit: rem
+# 水印字体大小。单位：rem
 fontSize = 0.85
-# FixIt 0.2.13 | NEW watermark's fontFamily
+# FixIt 0.2.13 | 新增：水印字体
 fontFamily = "inherit"
 
-# FixIt 0.3.10 | NEW Busuanzi count
+# FixIt 0.3.10 | 新增：不蒜子统计
 [params.busuanzi]
-# whether to enable busuanzi count
+# 是否启用不蒜子统计
 enable = false
-# busuanzi count core script source. Default is https://vercount.one/js
+# 不蒜子统计核心脚本源。默认为 https://vercount.one/js
 source = "https://vercount.one/js"
-# whether to show the site views
+# 是否显示站点访问量
 siteViews = true
-# whether to show the page views
+# 是否显示页面访问量
 pageViews = true
 
-# Site verification code config for Google/Bing/Yandex/Pinterest/Baidu/360/Sogou
+# Google/Bing/Yandex/Pinterest/Baidu/360/Sogou 的站点验证代码配置
 [params.verification]
 google = ""
 bing = ""
@@ -921,137 +921,137 @@ baidu = ""
 so = ""
 sogou = ""
 
-# Site SEO config
+# 站点 SEO 配置
 [params.seo]
-# image URL
+# 图片 URL
 image = ""
-# thumbnail URL
+# 缩略图 URL
 thumbnailUrl = ""
 
-# Analytics config
+# 分析配置
 [params.analytics]
 enable = false
 
 # Google Analytics
 [params.analytics.google]
 id = ""
-# whether to anonymize IP
+# 是否匿名化 IP
 anonymizeIP = true
 
 # Fathom Analytics
 [params.analytics.fathom]
 id = ""
-# server url for your tracker if you're self hosting
+# 如果你自行托管，请填写你的追踪器服务器 URL
 server = ""
 
-# FixIt 0.3.16 | NEW Baidu Analytics
+# FixIt 0.3.16 | 新增：百度统计
 [params.analytics.baidu]
 id = ""
 
-# FixIt 0.3.16 | NEW Umami Analytics
+# FixIt 0.3.16 | 新增：Umami Analytics
 [params.analytics.umami]
 data_website_id = ""
 src = ""
 data_host_url = ""
 data_domains = ""
 
-# FixIt 0.3.16 | NEW Plausible Analytics
+# FixIt 0.3.16 | 新增：Plausible Analytics
 [params.analytics.plausible]
 data_domain = ""
 src = ""
 
-# FixIt 0.3.16 | NEW Cloudflare Analytics
+# FixIt 0.3.16 | 新增：Cloudflare Analytics
 [params.analytics.cloudflare]
 token = ""
 
-# FixIt 0.3.16 | NEW Splitbee Analytics
+# FixIt 0.3.16 | 新增：Splitbee Analytics
 [params.analytics.splitbee]
 enable = false
-# no cookie mode
+# 无 cookie 模式
 no_cookie = true
-# respect the do not track setting of the browser
+# 尊重浏览器的“请勿追踪”设置
 do_not_track = true
-# token(optional), more info on https://splitbee.io/docs/embed-the-script
+# token (可选)，更多信息请访问 https://splitbee.io/docs/embed-the-script
 data_token = ""
 
-# Cookie consent config
+# Cookie 同意配置
 [params.cookieconsent]
 enable = true
 
-# text strings used for Cookie consent banner
+# Cookie 同意横幅使用的文本字符串
 [params.cookieconsent.content]
 message = ""
 dismiss = ""
 link = ""
 
-# CDN config for third-party library files
+# 第三方库文件的 CDN 配置
 [params.cdn]
-# CDN data file name, disabled by default ["jsdelivr.yml", "unpkg.yml", ...]
-# located in "themes/FixIt/assets/data/cdn/" directory
-# you can store your own data files in the same path under your project: "assets/data/cdn/"
+# CDN 数据文件名，默认禁用 ["jsdelivr.yml", "unpkg.yml", ...]
+# 位于 "themes/FixIt/assets/data/cdn/" 目录
+# 你可以在项目下的相同路径中存储自己的数据文件："assets/data/cdn/"
 data = ""
 
-# Compatibility config
+# 兼容性配置
 [params.compatibility]
-# whether to use Polyfill.io on cdnjs to be compatible with older browsers
+# 是否使用 cdnjs 上的 Polyfill.io 以兼容旧版浏览器
 # https://cdnjs.cloudflare.com/polyfill
 polyfill = false
-# whether to use object-fit-images to be compatible with older browsers
+# 是否使用 object-fit-images 以兼容旧版浏览器
 objectFit = false
 
-# FixIt 0.2.14 | NEW GitHub banner in the top-right or top-left corner
+# FixIt 0.2.14 | 新增：右上角或左上角的 GitHub 横幅
 [params.githubCorner]
 enable = false
 permalink = "https://github.com/hugo-fixit/FixIt"
 title = "View source on GitHub"
 position = "right" # ["left", "right"]
 
-# FixIt 0.2.14 | NEW Gravatar config
+# FixIt 0.2.14 | 新增：Gravatar 配置
 [params.gravatar]
-# FixIt 0.2.18 | NEW Depends on the author's email, if the author's email is not set, the local avatar will be used
+# FixIt 0.2.18 | 新增：取决于作者的邮箱，如果未设置作者邮箱，则使用本地头像
 enable = false
-# Gravatar host, default: "www.gravatar.com"
+# Gravatar 主机，默认："www.gravatar.com"
 host = "www.gravatar.com" # ["cravatar.cn", "gravatar.loli.net", ...]
 style = "" # ["", "mp", "identicon", "monsterid", "wavatar", "retro", "blank", "robohash"]
 
-# FixIt 0.2.16 | NEW Back to top
+# FixIt 0.2.16 | 新增：回到顶部
 [params.backToTop]
 enable = true
-# FixIt 0.4.0 | CHANGED whether to show the scroll percent indicator around the back to top button
+# FixIt 0.4.0 | 更改：是否在回到顶部按钮周围显示滚动百分比指示器
 scrollpercent = false
 
-# FixIt 0.2.16 | NEW Reading progress bar
+# FixIt 0.2.16 | 新增：阅读进度条
 [params.readingProgress]
 enable = false
-# Available values: ["left", "right"]
+# 可用值：["left", "right"]
 start = "left"
-# Available values: ["top", "bottom"]
+# 可用值：["top", "bottom"]
 position = "top"
 reversed = false
 light = ""
 dark = ""
 height = "2px"
 
-# FixIt 0.2.17 | NEW Progress bar in the top during page loading.
-# For more information: https://github.com/CodeByZach/pace
+# FixIt 0.2.17 | 新增：页面加载期间顶部的进度条。
+# 更多信息：https://github.com/CodeByZach/pace
 [params.pace]
 enable = false
-# All available colors:
+# 所有可用颜色：
 # ["black", "blue", "green", "orange", "pink", "purple", "red", "silver", "white", "yellow"]
 color = "blue"
-# All available themes:
+# 所有可用主题：
 # ["barber-shop", "big-counter", "bounce", "center-atom", "center-circle", "center-radar", "center-simple",
 # "corner-indicator", "fill-left", "flash", "flat-top", "loading-bar", "mac-osx", "material", "minimal"]
 theme = "minimal"
 
-# FixIt 0.3.17 | NEW PostChat AI config
-# Based on your posts to build a knowledge base, support AI summary, AI search, and AI Chatbot.
-# Get PostChat Key from my invitation link, thanks for your support!
+# FixIt 0.3.17 | 新增：PostChat AI 配置
+# 基于你的文章构建知识库，支持 AI 摘要、AI 搜索和 AI 聊天机器人。
+# 从我的邀请链接获取 PostChat Key，感谢你的支持！
 # https://ai.zhheo.com/console/login?InviteID=85041330
 [params.postChat]
 enable = false
 key = ""
-# How users initiate chats: ["iframe", "magic"]
+# 用户发起聊天的方式：["iframe", "magic"]
 userMode = "iframe"
 addButton = true
 defaultInput = false
@@ -1065,26 +1065,26 @@ upLoadWeb = true
 showInviteLink = true
 userTitle = ""
 userDesc = ""
-# dom container to be blacked out, e.g. [".aplayer"]
+# 要遮黑的 dom 容器，例如 [".aplayer"]
 blackDom = []
-# Only for iframe mode
-frameWidth = "" # e.g. "375px"
-frameHeight = "" # e.g. "600px"
-# only for magic mode
+# 仅适用于 iframe 模式
+frameWidth = "" # 例如 "375px"
+frameHeight = "" # 例如 "600px"
+# 仅适用于 magic 模式
 userIcon = ""
 defaultChatQuestions = []
 defaultSearchQuestions = []
-# FixIt 0.4.0 | NEW
+# FixIt 0.4.0 | 新增
 hotWords = true
 
-# FixIt 0.3.17 | NEW Summary AI config
-# See https://ai.zhheo.com/docs/summary.html
+# FixIt 0.3.17 | 新增：摘要 AI 配置
+# 参见 https://ai.zhheo.com/docs/summary.html
 [params.postSummary]
 enable = false
-# If you set `params.postChat.key`, you don't need to set `params.postSummary.key`
+# 如果你设置了 `params.postChat.key`，则不需要设置 `params.postSummary.key`
 key = ""
 title = ""
-# themes options: ["", "simple", "yanzhi"]
+# 主题选项：["", "simple", "yanzhi"]
 theme = ""
 postURL = ""
 blacklist = ""
@@ -1093,11 +1093,11 @@ typingAnimate = true
 beginningText = ""
 loadingText = true
 
-# FixIt 0.3.10 | NEW Global Feed config for RSS, Atom and JSON feed.
+# FixIt 0.3.10 | 新增：RSS, Atom 和 JSON feed 的全局 Feed 配置
 [params.feed]
-# The number of posts to include in the feed. If set to -1, all posts.
+# 包含在 feed 中的文章数量。如果设置为 -1，则为所有文章。
 limit = 10
-# whether to show the full text content in feed.
+# 是否在 feed 中显示全文内容。
 fullText = true
 
 # Site Challenge for Follow: https://follow.is/
@@ -1105,45 +1105,45 @@ fullText = true
 feedId = ""
 userId = ""
 
-# FixIt 0.3.17 | NEW Image config
-# Combined with Hugo's image processing option `imaging` for image optimisation
+# FixIt 0.3.17 | 新增：图片配置
+# 结合 Hugo 的图片处理选项 `imaging` 进行图片优化
 [params.image]
-# cache remote images for better optimisations
+# 缓存远程图片以获得更好的优化效果
 cacheRemote = false
-# Image resizing and optimisation (may slow builds)
+# 图片调整大小和优化（可能会减慢构建速度）
 optimise = false
-# FixIt 0.4.0 | NEW A list of image file names or patterns to exclude from optimisation
-# e.g. ["no-optimize.jpg", "*.tiff", "images/exclude-*.webp"]
+# FixIt 0.4.0 | 新增：从优化中排除的图片文件名或模式列表
+# 例如 ["no-optimize.jpg", "*.tiff", "images/exclude-*.webp"]
 blackList = []
 
-# FixIt 0.4.0 | NEW Code block wrapper config
-# you can override the global config via Markdown attributes, for example:
+# FixIt 0.4.0 | 新增：代码块包裹器配置
+# 你可以通过 Markdown 属性覆盖全局配置，例如：
 # ```lang {mode="mac", maxShownLines=5}
 # code here
 # ```
 [params.codeblock]
-# whether to enable the code block wrapper
+# 是否启用代码块包裹器
 wrapper = true
-# code block mode
-# available modes: ["classic", "mac", "simple", ...]
-# if you set to custom value, you need to create a custom CSS for data-mode attribute
+# 代码块模式
+# 可用模式：["classic", "mac", "simple", ...]
+# 如果你设置为自定义值，你需要为 data-mode 属性创建一个自定义 CSS
 mode = "classic"
-# additional classes for the code block wrapper
-# e.g. "is-collapsed is-expanded line-nos-hidden line-wrapping"
+# 代码块包裹器的额外类
+# 例如 "is-collapsed is-expanded line-nos-hidden line-wrapping"
 wrapperClass = ""
-# the maximum number of lines to show in the code block preview
+# 代码块预览中显示的最大行数
 maxShownLines = 10
-# whether to enable code copy button
+# 是否启用代码复制按钮
 copyable = true
-# [classic] whether to enable line numbers toggle button in the code block header
+# [classic] 是否启用代码块头部的行号切换按钮
 lineNosToggler = true
-# [classic] whether to enable toggle line wrapping button in the code block header
+# [classic] 是否启用代码块头部的换行切换按钮
 lineWrapToggler = true
-# [classic][Experimental] whether to enable code edit button in the code block header
+# [classic][实验性] 是否启用代码块头部的代码编辑按钮
 editable = false
 
-# FixIt 0.4.0 | NEW JSON Viewer config
-# See https://github.com/Lruihao/json-viewer-element
+# FixIt 0.4.0 | 新增：JSON 查看器配置
+# 参见 https://github.com/Lruihao/json-viewer-element
 [params.jsonViewer]
 enable = true
 expandDepth = 1
@@ -1151,9 +1151,9 @@ copyable = true
 sort = false
 boxed = true
 
-# FixIt 0.3.12 | NEW Custom partials config
-# Custom partials must be stored in the /layouts/_partials/ directory.
-# Depends on open custom blocks https://fixit.lruihao.cn/references/blocks/
+# FixIt 0.3.12 | 新增：自定义 partials 配置
+# 自定义 partials 必须存储在 /layouts/_partials/ 目录中。
+# 依赖于开放自定义块 https://fixit.lruihao.cn/references/blocks/
 [params.customPartials]
 head = []
 menuDesktop = []
@@ -1171,111 +1171,111 @@ postContentAfter = []
 postFooterBefore = []
 postFooterAfter = []
 
-# FixIt 0.2.15 | NEW Developer options
-# Select the scope named `public_repo` to generate personal access token,
-# Configure with environment variable `HUGO_PARAMS_GHTOKEN=xxx`, see https://gohugo.io/functions/os/getenv/#examples
+# FixIt 0.2.15 | 新增：开发者选项
+# 选择名为 `public_repo` 的 scope 来生成个人访问令牌 (personal access token)，
+# 使用环境变量 `HUGO_PARAMS_GHTOKEN=xxx` 进行配置，参见 https://gohugo.io/functions/os/getenv/#examples
 [params.dev]
 enable = false
-# Check for updates
+# 检查更新
 c4u = false
 
-# Page config
+# 页面配置
 [params.page]
-# FixIt 0.2.18 | NEW whether to enable the author's avatar of the post
+# FixIt 0.2.18 | 新增：是否启用文章作者头像
 authorAvatar = true
-# whether to hide a page from home page
+# 是否在首页隐藏页面
 hiddenFromHomePage = false
-# whether to hide a page from search results
+# 是否在搜索结果中隐藏页面
 hiddenFromSearch = false
-# FixIt 0.3.0 | NEW whether to hide a page from related posts
+# FixIt 0.3.0 | 新增：是否在相关文章中隐藏页面
 hiddenFromRelated = false
-# FixIt 0.3.10 | NEW whether to hide a page from RSS, Atom and JSON feed
+# FixIt 0.3.10 | 新增：是否在 RSS, Atom 和 JSON feed 中隐藏页面
 hiddenFromFeed = false
-# whether to enable twemoji
+# 是否启用 twemoji
 twemoji = false
-# FixIt 0.2.18 | CHANGED whether to enable lightgallery
-# set to true, images in the content will be shown as the gallery if the image has a title, e.g. ![alt](src "title")
-# set to "force", images in the content will be forced to shown as the gallery regardless of the image has a title or not, e.g. ![alt](src)
-# TODO change gallery engine in the future
+# FixIt 0.2.18 | 更改：是否启用 lightgallery
+# 设为 true，如果有标题，内容中的图片将显示为画廊，例如 ![alt](src "title")
+# 设为 "force"，无论图片是否有标题，内容中的图片都将强制显示为画廊，例如 ![alt](src)
+# TODO 未来更改画廊引擎
 lightgallery = false
-# whether to enable the ruby extended syntax
+# 是否启用 ruby 扩展语法
 ruby = true
-# whether to enable the fraction extended syntax
+# 是否启用 fraction 扩展语法
 fraction = true
-# whether to enable the fontawesome extended syntax
+# 是否启用 fontawesome 扩展语法
 fontawesome = true
-# license info (HTML format is supported)
+# 许可协议信息（支持 HTML 格式）
 license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>'
-# whether to show link to Raw Markdown content of the post
+# 是否显示查看文章原始 Markdown 内容的链接
 linkToMarkdown = true
-# FixIt 0.3.0 | NEW whether to show link to view source code of the post
+# FixIt 0.3.0 | 新增：是否显示查看文章源代码的链接
 linkToSource = true
-# FixIt 0.3.0 | NEW whether to show link to edit the post
+# FixIt 0.3.0 | 新增：是否显示编辑文章的链接
 linkToEdit = true
-# FixIt 0.3.0 | NEW whether to show link to report issue for the post
+# FixIt 0.3.0 | 新增：是否显示报告文章问题的链接
 linkToReport = true
-# FixIt 0.3.20 | NEW whether to show link to view the post in VSCode
+# FixIt 0.3.20 | 新增：是否显示在 VSCode 中查看文章的链接
 linkToVscode = true
-# FixIt 0.3.10 | CHANGED Page style ["narrow", "normal", "wide", ...]
+# FixIt 0.3.10 | 更改：页面样式 ["narrow", "normal", "wide", ...]
 pageStyle = "normal"
-# FixIt 0.2.17 | CHANGED Auto Bookmark Support
-# If true, save the reading progress when closing the page.
+# FixIt 0.2.17 | 更改：自动书签支持
+# 如果为 true，则在关闭页面时保存阅读进度。
 autoBookmark = false
-# FixIt 0.2.17 | NEW whether to enable wordCount
+# FixIt 0.2.17 | 新增：是否启用字数统计
 wordCount = true
-# FixIt 0.2.17 | NEW whether to enable readingTime
+# FixIt 0.2.17 | 新增：是否启用阅读时间
 readingTime = true
-# FixIt 0.2.17 | NEW end of post flag
+# FixIt 0.2.17 | 新增：文章结束标志
 endFlag = ""
-# FixIt 0.2.18 | NEW whether to enable instant.page
+# FixIt 0.2.18 | 新增：是否启用 instant.page
 instantPage = false
-# FixIt 0.3.0 | NEW whether to enable collection list at the sidebar
+# FixIt 0.3.0 | 新增：是否在侧边栏启用集合列表
 collectionList = false
-# FixIt 0.3.0 | NEW whether to enable collection navigation at the end of the post
+# FixIt 0.3.0 | 新增：是否在文章末尾启用集合导航
 collectionNavigation = false
 
-# FixIt 0.2.15 | NEW Repost config
+# FixIt 0.2.15 | 新增：转载配置
 [params.page.repost]
 enable = false
 url = ""
 
-# Table of the contents config
+# 目录 (TOC) 配置
 [params.page.toc]
-# whether to enable the table of the contents
+# 是否启用目录
 enable = true
-# whether to keep the static table of the contents in front of the post
+# 是否将静态目录保留在文章前面
 keepStatic = false
-# whether to make the table of the contents in the sidebar automatically collapsed
+# 是否使侧边栏的目录自动折叠
 auto = true
-# FixIt 0.2.13 | NEW position of TOC ["left", "right"]
+# FixIt 0.2.13 | 新增：目录位置 ["left", "right"]
 position = "right"
-# FixIt 0.3.12 | NEW supersede `markup.tableOfContents` settings
+# FixIt 0.3.12 | 新增：取代 `markup.tableOfContents` 设置
 ordered = false
 startLevel = 2
 endLevel = 6
-# FixIt 0.4.0 | NEW whether to decrease the H1 heading level in content
+# FixIt 0.4.0 | 新增：是否在内容中降低 H1 标题级别
 decreaseH1 = false
 
-# FixIt 0.2.13 | NEW Display a message at the beginning of an article to warn the reader that its content might be expired
+# FixIt 0.2.13 | 新增：在文章开头显示信息，警告读者内容可能已过期
 [params.page.expirationReminder]
 enable = false
-# Display the reminder if the last modified time is more than 90 days ago
+# 如果最后修改时间超过 90 天，则显示提醒
 reminder = 90
-# Display warning if the last modified time is more than 180 days ago
+# 如果最后修改时间超过 180 天，则显示警告
 warning = 180
-# If the article expires, close the comment or not
+# 如果文章过期，是否关闭评论
 closeComment = false
 
-# FixIt 0.3.0 | NEW page heading config
+# FixIt 0.3.0 | 新增：页面标题配置
 [params.page.heading]
-# FixIt 0.3.3 | NEW whether to capitalize automatic text of headings
+# FixIt 0.3.3 | 新增：是否大写标题的自动文本
 capitalize = false
 
-# FixIt 0.3.12 | CHANGED must set `params.page.toc.ordered` to true
+# FixIt 0.3.12 | 更改：必须将 `params.page.toc.ordered` 设置为 true
 [params.page.heading.number]
-# whether to enable auto heading numbering
+# 是否启用自动标题编号
 enable = false
-# FixIt 0.3.3 | NEW only enable in main section pages (default is posts)
+# FixIt 0.3.3 | 新增：仅在主要 section 页面中启用（默认为 posts）
 onlyMainSection = true
 
 [params.page.heading.number.format]
@@ -1286,38 +1286,38 @@ h4 = "{h2}.{h3}.{h4} {title}"
 h5 = "{h2}.{h3}.{h4}.{h5} {title}"
 h6 = "{h2}.{h3}.{h4}.{h5}.{h6} {title}"
 
-# FixIt 0.4.0 | CHANGED mathematical formulas configuration
-# See http://fixit.lruihao.cn/documentation/content-management/markdown-syntax/extended/#formula
+# FixIt 0.4.0 | 更改：数学公式配置
+# 参见 http://fixit.lruihao.cn/documentation/content-management/markdown-syntax/extended/#formula
 [params.page.math]
 enable = true
-# mathematical formulas rendering engines, optional values: ["katex", "mathjax"]
+# 数学公式渲染引擎，可选值：["katex", "mathjax"]
 type = "katex"
 
-# KaTeX server-side rendering (https://katex.org)
-# KaTeX partial config: https://gohugo.io/functions/transform/tomath/#options
+# KaTeX 服务端渲染 (https://katex.org)
+# KaTeX partial 配置: https://gohugo.io/functions/transform/tomath/#options
 [params.page.math.katex]
-# KaTeX extension copy-tex
+# KaTeX 扩展 copy-tex
 copyTex = true
 throwOnError = false
 errorColor = "#ff4949"
 
-# custom macros map
-# syntax: <macro> = <definition>
+# 自定义宏映射
+# 语法：<macro> = <definition>
 [params.page.math.katex.macros]
-# "\\f" = "#1f(#2)"  # usage: $\f{a}{b}$
+# "\\f" = "#1f(#2)"  # 使用: $\f{a}{b}$
 
-# MathJax server-side rendering (https://www.mathjax.org)
-# MathJax config: https://docs.mathjax.org/en/latest/options/index.html
+# MathJax 服务端渲染 (https://www.mathjax.org)
+# MathJax 配置: https://docs.mathjax.org/en/latest/options/index.html
 [params.page.math.mathjax]
 cdn = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
 
 [params.page.math.mathjax.packages]
 # "[+]" = ["configmacros"]
 
-# custom macros map
-# syntax: <macro> = <definition>
+# 自定义宏映射
+# 语法：<macro> = <definition>
 [params.page.math.mathjax.macros]
-# bold = ["{\\bf #1}", 1]  # usage: $\bold{math}$
+# bold = ["{\\bf #1}", 1]  # 使用: $\bold{math}$
 
 [params.page.math.mathjax.loader]
 load = [ "ui/safe" ]
@@ -1325,10 +1325,10 @@ load = [ "ui/safe" ]
 [params.page.math.mathjax.loader.paths]
 # custom = "https://cdn.jsdelivr.net/gh/sonoisa/XyJax-v3@3.0.1/build/"
 
-# more loader config e.g source, dependencies, provides etc.
+# 更多加载器配置，例如 source, dependencies, provides 等
 [params.page.math.mathjax.options]
 enableMenu = true
-# HTML tags that won't be searched for math
+# 不搜索数学公式的 HTML 标签
 skipHtmlTags = [
   "script",
   "noscript",
@@ -1341,50 +1341,50 @@ skipHtmlTags = [
   "option",
   "mjx-container"
 ]
-# class that marks tags not to search
+# 标记不搜索的标签的 class
 ignoreHtmlClass = "mathjax_ignore"
 
-# HTML tags that can appear within math
+# 可以出现在数学公式内的 HTML 标签
 [params.page.math.mathjax.options.includeHtmlTags]
 # "#comment" = ""
 # br = "\n"
 # wbr = ""
 
-# Mapbox GL JS config (https://docs.mapbox.com/mapbox-gl-js)
+# Mapbox GL JS 配置 (https://docs.mapbox.com/mapbox-gl-js)
 [params.page.mapbox]
-# access token of Mapbox GL JS
+# Mapbox GL JS 的 access token
 accessToken = ""
-# style for the light theme
+# 浅色主题样式
 lightStyle = "mapbox://styles/mapbox/light-v11"
-# style for the dark theme
+# 深色主题样式
 darkStyle = "mapbox://styles/mapbox/dark-v11"
-# whether to add NavigationControl
+# 是否添加 NavigationControl
 navigation = true
-# whether to add GeolocateControl
+# 是否添加 GeolocateControl
 geolocate = true
-# whether to add ScaleControl
+# 是否添加 ScaleControl
 scale = true
-# whether to add FullscreenControl
+# 是否添加 FullscreenControl
 fullscreen = true
 
-# FixIt 0.3.0 | NEW Related content config (https://gohugo.io/content-management/related/)
+# FixIt 0.3.0 | 新增：相关内容配置 (https://gohugo.io/content-management/related/)
 [params.page.related]
 enable = false
 count = 5
-# FixIt 0.3.20 | NEW position of related content, optional values: ["aside", "footer"]
+# FixIt 0.3.20 | 新增：相关内容的位置，可选值：["aside", "footer"]
 position = [
   "aside",
   "footer"
 ]
 
-# FixIt 0.2.17 | NEW Donate (Sponsor) settings
+# FixIt 0.2.17 | 新增：打赏 (Sponsor) 设置
 [params.page.reward]
 enable = false
 animation = false
-# position relative to post footer, optional values: ["before", "after"]
+# 相对于文章页脚的位置，可选值：["before", "after"]
 position = "after"
 # comment = "Buy me a coffee"
-# FixIt 0.2.18 | NEW display mode of QR code images, optional values: ["static", "fixed"], default: `static`
+# FixIt 0.2.18 | 新增：二维码图片的显示模式，可选值：["static", "fixed"]，默认：`static`
 mode = "static"
 
 [params.page.reward.ways]
@@ -1393,7 +1393,7 @@ mode = "static"
 # paypal = "/images/paypal.png"
 # bitcoin = "/images/bitcoin.png"
 
-# Social share links in post page
+# 文章页面的社交分享链接
 [params.page.share]
 enable = true
 Twitter = true
@@ -1421,26 +1421,26 @@ Skype = false
 Trello = false
 Mix = false
 
-# FixIt 0.2.15 | CHANGED Comment config
+# FixIt 0.2.15 | 更改：评论配置
 [params.page.comment]
 enable = false
 
-# FixIt 0.2.13 | NEW Artalk comment config (https://artalk.js.org/)
+# FixIt 0.2.13 | 新增：Artalk 评论配置 (https://artalk.js.org/)
 [params.page.comment.artalk]
 enable = false
 server = "https://yourdomain"
 site = "默认站点"
-# FixIt 0.3.3 | NEW whether use backend configuration
+# FixIt 0.3.3 | 新增：是否使用后端配置
 useBackendConf = false
 placeholder = ""
 noComment = ""
 sendBtn = ""
 editorTravel = true
 flatMode = "auto"
-# FixIt 0.2.17 | CHANGED enable lightgallery support
+# FixIt 0.2.17 | 更改：启用 lightgallery 支持
 lightgallery = false
-locale = "" # FixIt 0.2.15 | NEW
-# FixIt 0.2.18 | NEW
+locale = "" # FixIt 0.2.15 | 新增
+# FixIt 0.2.18 | 新增
 emoticons = ""
 nestMax = 2
 nestSort = "DATE_ASC" # ["DATE_ASC", "DATE_DESC", "VOTE_UP_DESC"]
@@ -1452,13 +1452,13 @@ imgUpload = true
 preview = true
 versionCheck = true
 
-# Disqus comment config (https://disqus.com)
+# Disqus 评论配置 (https://disqus.com)
 [params.page.comment.disqus]
 enable = false
-# Disqus shortname to use Disqus in posts
+# 在文章中使用 Disqus 的 shortname
 shortname = ""
 
-# Gitalk comment config (https://github.com/gitalk/gitalk)
+# Gitalk 评论配置 (https://github.com/gitalk/gitalk)
 [params.page.comment.gitalk]
 enable = false
 owner = ""
@@ -1466,7 +1466,7 @@ repo = ""
 clientId = ""
 clientSecret = ""
 
-# Valine comment config (https://github.com/xCss/Valine)
+# Valine 评论配置 (https://github.com/xCss/Valine)
 [params.page.comment.valine]
 enable = false
 appId = ""
@@ -1486,20 +1486,20 @@ recordIP = true
 highlight = true
 enableQQ = false
 serverURLs = ""
-# emoji data file name, default is "google.yml"
+# emoji 数据文件名，默认为 "google.yml"
 # ["apple.yml", "google.yml", "facebook.yml", "twitter.yml"]
-# located in "themes/FixIt/assets/lib/valine/emoji/" directory
-# you can store your own data files in the same path under your project:
+# 位于 "themes/FixIt/assets/lib/valine/emoji/" 目录
+# 你可以在项目下的相同路径中存储自己的数据文件：
 # "assets/lib/valine/emoji/"
 emoji = ""
 commentCount = true
 
-# FixIt 0.2.13 | NEW
-# FixIt 0.2.16 | CHANGED Waline comment config (https://waline.js.org)
+# FixIt 0.2.13 | 新增
+# FixIt 0.2.16 | 更改：Waline 评论配置 (https://waline.js.org)
 [params.page.comment.waline]
 enable = false
 serverURL = ""
-pageview = false # FixIt 0.2.15 | NEW
+pageview = false # FixIt 0.2.15 | 新增
 emoji = [ "//unpkg.com/@waline/emojis@1.1.0/weibo" ]
 meta = [
   "nick",
@@ -1510,17 +1510,17 @@ requiredMeta = []
 login = "enable"
 wordLimit = 0
 pageSize = 10
-imageUploader = false # FixIt 0.2.15 | NEW
-highlighter = false # FixIt 0.2.15 | NEW
-comment = false # FixIt 0.2.15 | NEW
-texRenderer = false # FixIt 0.2.16 | NEW
-search = false # FixIt 0.2.16 | NEW
-recaptchaV3Key = "" # FixIt 0.2.16 | NEW
-turnstileKey = "" # FixIt 0.3.8 | NEW
+imageUploader = false # FixIt 0.2.15 | 新增
+highlighter = false # FixIt 0.2.15 | 新增
+comment = false # FixIt 0.2.15 | 新增
+texRenderer = false # FixIt 0.2.16 | 新增
+search = false # FixIt 0.2.16 | 新增
+recaptchaV3Key = "" # FixIt 0.2.16 | 新增
+turnstileKey = "" # FixIt 0.3.8 | 新增
 reaction = false
 
-# FixIt 0.2.18 | NEW
-# Facebook comment config (https://developers.facebook.com/docs/plugins/comments)
+# FixIt 0.2.18 | 新增
+# Facebook 评论配置 (https://developers.facebook.com/docs/plugins/comments)
 [params.page.comment.facebook]
 enable = false
 width = "100%"
@@ -1528,7 +1528,7 @@ numPosts = 10
 appId = ""
 languageCode = ""
 
-# Telegram comments config (https://comments.app)
+# Telegram 评论配置 (https://comments.app)
 [params.page.comment.telegram]
 enable = false
 siteID = ""
@@ -1539,11 +1539,11 @@ colorful = true
 dislikes = false
 outlined = false
 
-# Commento comment config (https://commento.io)
+# Commento 评论配置 (https://commento.io)
 [params.page.comment.commento]
 enable = false
 
-# Utterances comment config (https://utteranc.es)
+# Utterances 评论配置 (https://utteranc.es)
 [params.page.comment.utterances]
 enable = false
 # owner/repo
@@ -1553,7 +1553,7 @@ label = ""
 lightTheme = "github-light"
 darkTheme = "github-dark"
 
-# FixIt 0.2.13 | NEW Twikoo comment config (https://twikoo.js.org/)
+# FixIt 0.2.13 | 新增：Twikoo 评论配置 (https://twikoo.js.org/)
 [params.page.comment.twikoo]
 enable = false
 envId = ""
@@ -1561,12 +1561,12 @@ region = ""
 path = ""
 visitor = true
 commentCount = true
-# FixIt 0.2.17 | CHANGED enable lightgallery support
+# FixIt 0.2.17 | 更改：启用 lightgallery 支持
 lightgallery = false
-# FixIt 0.2.17 | NEW enable Katex support
+# FixIt 0.2.17 | 新增：启用 Katex 支持
 katex = false
 
-# FixIt 0.2.14 | NEW Giscus comments config
+# FixIt 0.2.14 | 新增：Giscus 评论配置
 [params.page.comment.giscus]
 enable = false
 repo = ""
@@ -1574,8 +1574,8 @@ repoId = ""
 category = ""
 categoryId = ""
 mapping = ""
-origin = "https://giscus.app" # FixIt NEW | 0.3.7 Or set it to your self-hosted domain
-strict = "0" # FixIt NEW | 0.2.18
+origin = "https://giscus.app" # FixIt 新增 | 0.3.7 或者设置为你的自托管域名
+strict = "0" # FixIt 新增 | 0.2.18
 term = ""
 reactionsEnabled = "1"
 emitMetadata = "0"
@@ -1585,27 +1585,27 @@ lightTheme = "light"
 darkTheme = "dark"
 lazyLoad = true
 
-# Third-party library config
+# 第三方库配置
 [params.page.library]
 
 [params.page.library.css]
 # someCSS = "some.css"
-# located in "assets/"
-# Or
+# 位于 "assets/"
+# 或者
 # someCSS = "https://cdn.example.com/some.css"
 
 [params.page.library.js]
 # someJavascript = "some.js"
-# located in "assets/"
-# Or
+# 位于 "assets/"
+# 或者
 # someJavascript = "https://cdn.example.com/some.js"
 
-# Page SEO config
+# 页面 SEO 配置
 [params.page.seo]
-# image URL
+# 图片 URL
 images = []
 
-# Publisher info
+# 发布者信息
 [params.page.seo.publisher]
 name = ""
 logoUrl = ""
